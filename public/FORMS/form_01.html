@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Termo de Responsabilidade - Notebook</title>
+  <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+
+  <img src="../IMG/logo.png" alt="Logo Alvoar Lácteos" class="logo">
+
+  <h2 class="titulo">Dados do Usuário</h2>
+  <form id="form-notebook" action="http://localhost:3000/api/notebooks" method="POST">
+    
+    <label for="input-nome-func">Nome:</label>
+    <input type="text" name="nome" id="input-nome-func" required>
+
+    <label for="input-cpf">CPF:</label>
+    <input type="text" name="cpf" id="input-cpf" required>
+
+    <label for="input-funcao">Função:</label>
+    <input type="text" name="funcao" id="input-funcao" required>
+
+    <label for="input-email">Email:</label>
+    <input type="email" name="email" id="input-email" required>
+
+    <label for="input-area">Departamento:</label>
+    <select name="area" id="input-area" required>
+      <option value="" disabled selected>Selecione</option>
+      <option value="TI">TI</option>
+      <option value="RH">RH</option>
+      <option value="Financeiro">Financeiro</option>
+      <option value="Produção">Produção</option>
+      <option value="Logística">Logística</option>
+      <option value="Outro">Outro</option>
+    </select>
+
+    <div class="assinatura">
+      <!-- Espaço para assinatura, caso queira incluir -->
+    </div>
+
+  <button onclick="window.location.href='../index.html'">Voltar</button>
+  <button onclick="window.location.href='form_02.html'">Próximo</button>
+
+  <script src="../JS/meu_Script.js"></script>
+   </form>
+</body>
+</html>

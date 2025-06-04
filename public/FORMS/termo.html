@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Termo de Responsabilidade - Notebook</title>
+  <link rel="stylesheet" href="../CSS/estilos.css">
+  
+</head>,
+<body>
+
+    <img src="../IMG/logo.png" alt="Logo Alvoar Lácteos" class="logo">
+
+
+  <h2 class="titulo">TERMO DE RESPONSABILIZAÇÃO PELA GUARDA E USO DE EQUIPAMENTO DE TRABALHO</h2>
+  <p>A <strong>ALVOAR LÁCTEOS S.A</strong>, pessoa jurídica de direito privado, com matriz sediada na Rua Carlos Câmara, 1454, Jardim América, CEP: 60.425-810, Fortaleza – CE, inscrita no CNPJ nº 10.483.444/0001-89, entrega neste ato, o equipamento:</p>
+ 
+  <table border="1" cellpadding="5">
+    <tr>
+      <td>Marca:</td>
+      <td id="td-marca"></td>
+    </tr>
+    <tr>
+      <td>Modelo:</td>
+      <td id="td-modelo"></td>
+    </tr>
+    <tr>
+      <td>Patrimônio:</td>
+      <td id="td-patrimonio"></td>
+    </tr>
+  </table>
+
+  <ol>
+    <li>O equipamento deverá ser utilizado <strong>EXCLUSIVAMENTE </strong> para fins profissionais no exercício das atividades laborais atribuídas ao USUÁRIO, sendo vedado qualquer uso de natureza pessoal ou diversa dos interesses da empresa.</li>
+    <li>O USUÁRIO declara estar ciente de que o equipamento está equipado com tecnologia de rastreamento, a qual poderá ser utilizada pela empresa com a finalidade de monitorar sua localização, sempre que necessário.</li>
+    <li>O USUÁRIO assume integral responsabilidade pela correta utilização, conservação e guarda do equipamento, zelando por sua integridade durante todo o período de posse.</li>
+    <li>O USUÁRIO detém apenas a posse do equipamento, exclusivamente para fins de desempenho de suas funções profissionais, não sendo, sob nenhuma circunstância, transferida a propriedade do bem. Fica terminantemente proibido o empréstimo, aluguel, cessão ou qualquer outra forma de transferência do equipamento a terceiros.<strong>PROPRIEDADE</strong> do equipamento, restando terminantemente proibidos o empréstimo, aluguel ou cessão deste equipamento à terceiros.</li>
+    <li>Em caso de dano, mau funcionamento, perda, extravio ou inutilização decorrente de uso inadequado, negligência ou má conservação por parte do USUÁRIO, a empresa poderá proceder com a substituição do equipamento e realizar o desconto correspondente ao valor de mercado de equipamento de marca e modelo similares, com o que o USUÁRIO concorda expressamente.</li>
+    <li>Havendo qualquer dano ou extravio do equipamento, o USUÁRIO compromete-se a comunicar o fato de forma imediata ao seu setor de lotação e à área de Tecnologia da Informação da empres</li>
+    <li>Ao término da prestação de serviços ou na rescisão do contrato de trabalho, o USUÁRIO compromete-se a devolver o equipamento no mesmo dia da comunicação do desligamento, em perfeito estado de conservação, ressalvadas as condições de desgaste natural decorrente do uso regular.</li>
+  </ol>
+
+  <p>Fortaleza, <span>___</span> de <span>__________</span> de <span>________</span></p>
+  <!--
+
+<p><strong>Responsável pela Entrega do Equipamento:</strong></p>
+<p><span id="responsavel">João da Silva</span></p>
+
+  </div>
+   -->
+  
+
+
+<button onclick="window.location.href='form_02.html'">Voltar</button>
+<button onclick="window.print()">Imprimir Termo</button>
+<script>
+  // Ao carregar a página, preenche os dados na tabela
+  window.addEventListener('DOMContentLoaded', () => {
+    const marca = localStorage.getItem('marca') || '';
+    const modelo = localStorage.getItem('modelo') || '';
+    const patrimonio = localStorage.getItem('patrimonio') || '';
+
+    document.getElementById('td-marca').textContent = marca;
+    document.getElementById('td-modelo').textContent = modelo;
+    document.getElementById('td-patrimonio').textContent = patrimonio;
+  });
+</script>
+
+  <script src="../JS/meu_Script.js"></script>
+</body>
+</html>
