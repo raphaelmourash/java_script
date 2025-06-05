@@ -8,8 +8,8 @@ const port = 3000;
 // Servir arquivos da pasta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+app.listen(3000, () => {
+  console.log('Servidor rodando na porta 3000');
 });
 
 console.log('Conectando ao banco:', process.env.PGDATABASE);

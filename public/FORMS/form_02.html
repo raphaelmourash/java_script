@@ -16,25 +16,25 @@
 <label>Marca: <input type="text" name="marca" id="input-marca-nb" placeholder="Lenovo"></label>
 <label>Modelo: <input type="text" name="modelo" id="input-modelo-nb" placeholder="B330-15IKBR"></label>
 <label>Nº de patrimônio: <input type="text" name="patrimonio" id="input-patrimonio-nb" placeholder="9939"></label>
-<label>Nº de série: <input type="text" name="nserie" id="input-nserie"></label>
+<label>Nº de série: <input type="text" name="nserie" id="input-nserie" placeholder="PE0C9C97"></label>
 <label>Processador: <input type="text" name="processador" id="input-processador" placeholder="Intel i5, AMD Ryzen 5"></label>
 <label>Memória RAM: <input type="text" name="memoria" id="input-memoria" placeholder="8 GB"></label>
 <label>Armazenamento: <input type="text" name="armazenamento" id="input-armazenamento" placeholder="256 GB SSD"></label>
 <label>Sistema Operacional: <input type="text" name="so" id="input-so" placeholder="Windows 11 Pro"></label>
 <label>Versão do Office: <input type="text" name="voffice" id="input-voffice" placeholder="Office 365"></label>
-
-  </div>
   
-  <label class="data-local">Local e Data:
-    <input type="text" name="data" placeholder="Fortaleza, ___ de __________ de ________">
-  </label>
+    <!-- Calendário Dinâmico -->
+    <label for="dataInput">Data do termo:</label>
+    <input type="date" id="dataInput" name="data">
 
+    <!--Campo assinatura -->
   <div class="assinatura">
-    <hr>
     <label> Responsável pela Entrega do Equipamento:
       <input type="text" name="responsavel">
     </label>
   </div>
+      </div>
+
 <!--
   <h3 class="subtitulo">DEVOLUÇÃO</h3>
 
@@ -93,8 +93,10 @@
 
 <!-- FIM da tabela escondida  -->
 
-<button onclick="window.location.href='form_01.html'">Voltar</button>
-<button onclick="irParaTermo()">Próximo</button>
+<div class="botoes">
+    <button onclick="window.location.href='form_01.html'">Voltar</button>
+    <button onclick="irParaTermo()">Próximo</button>
+  </div>
 
   <script src="../JS/meu_Script.js"></script>
   

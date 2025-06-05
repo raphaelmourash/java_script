@@ -10,11 +10,11 @@
 
     <img src="../IMG/logo.png" alt="Logo Alvoar Lácteos" class="logo">
 
-
+  <div class="justificado">
   <h2 class="titulo">TERMO DE RESPONSABILIZAÇÃO PELA GUARDA E USO DE EQUIPAMENTO DE TRABALHO</h2>
   <p>A <strong>ALVOAR LÁCTEOS S.A</strong>, pessoa jurídica de direito privado, com matriz sediada na Rua Carlos Câmara, 1454, Jardim América, CEP: 60.425-810, Fortaleza – CE, inscrita no CNPJ nº 10.483.444/0001-89, entrega neste ato, o equipamento:</p>
  
-  <table border="1" cellpadding="5">
+  <table class="tabela-equipamento" border="1" cellpadding="5">
     <tr>
       <td>Marca:</td>
       <td id="td-marca"></td>
@@ -39,7 +39,6 @@
     <li>Ao término da prestação de serviços ou na rescisão do contrato de trabalho, o USUÁRIO compromete-se a devolver o equipamento no mesmo dia da comunicação do desligamento, em perfeito estado de conservação, ressalvadas as condições de desgaste natural decorrente do uso regular.</li>
   </ol>
 
-  <p>Fortaleza, <span>___</span> de <span>__________</span> de <span>________</span></p>
   <!--
 
 <p><strong>Responsável pela Entrega do Equipamento:</strong></p>
@@ -47,12 +46,17 @@
 
   </div>
    -->
-  
+<div class="data-formatada">
+  Fortaleza, <span class="data-item" id="dia">___</span> de <span class="data-item" id="mes">__________</span> de <span class="data-item" id="ano">______</span>
+</div>
+</div>
 
-
+<div class="botoes">
 <button onclick="window.location.href='form_02.html'">Voltar</button>
+<button onclick="window.location.href='#'">Salvar</button>
 <button onclick="window.print()">Imprimir Termo</button>
-<script>
+</div>
+ <!--<script>
   // Ao carregar a página, preenche os dados na tabela
   window.addEventListener('DOMContentLoaded', () => {
     const marca = localStorage.getItem('marca') || '';
@@ -63,7 +67,7 @@
     document.getElementById('td-modelo').textContent = modelo;
     document.getElementById('td-patrimonio').textContent = patrimonio;
   });
-</script>
+</script>  -->
 
   <script src="../JS/meu_Script.js"></script>
 </body>
